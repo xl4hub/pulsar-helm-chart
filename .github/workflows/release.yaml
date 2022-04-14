@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - 'helm-chart-sources/pulsar'
+      - 'charts/pulsar'
 
 jobs:
   release:
