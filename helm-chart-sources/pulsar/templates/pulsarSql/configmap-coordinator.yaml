@@ -79,8 +79,8 @@ data:
     {{- else }}
     pulsar.zookeeper-uri={{ include "pulsar.zkConnectString" . }}
     {{- end }}
-    pulsar.bookkeeper-explicit-interval={{ .Values.pulsarSQL.catalog.pulsar.bookkeeperExplicitInterval }}
-    pulsar.bookkeeper-use-v2-protocol={{ .Values.pulsarSQL.catalog.pulsar.bookkeeperUseV2Protocol }}
+    #pulsar.bookkeeper-explicit-interval={{ .Values.pulsarSQL.catalog.pulsar.bookkeeperExplicitInterval }}
+    #pulsar.bookkeeper-use-v2-protocol={{ .Values.pulsarSQL.catalog.pulsar.bookkeeperUseV2Protocol }}
     pulsar.max-entry-read-batch-size={{ .Values.pulsarSQL.catalog.pulsar.maxEntryReadBatchSize }}
     pulsar.target-num-splits={{ .Values.pulsarSQL.catalog.pulsar.targetNumSplits }}
     pulsar.max-split-message-queue-size={{ .Values.pulsarSQL.catalog.pulsar.maxSplitMessageQueueSize }}
