@@ -4,8 +4,9 @@ on:
   push:
     branches:
       - master
-    paths:
-      - 'charts/pulsar'
+  workflow_dispatch:
+  #  paths:
+  #    - 'charts/pulsar'
 
 jobs:
   release:
